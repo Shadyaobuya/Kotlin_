@@ -3,7 +3,9 @@ import java.util.*
 fun main(){
     oddEven()
     println(Arrays.toString(arrayString(arrayOf("Shadya", "Gard", "Obuya",""))))
-    ageDrinks(6)
+    ageDrinks(14)
+    ageDrinks(5)
+    
     fizzBuzz()
 
 }
@@ -25,13 +27,12 @@ fun arrayString(names:Array<String>):Int{
             num+=1
 
         }
+
+
         }
 
+    return num
     }
-
-
-
-
 
 fun ageDrinks(age:Int){
     if (age<6){
