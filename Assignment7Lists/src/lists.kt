@@ -19,6 +19,7 @@ fun main(){
     println(names(arrayOf("Catherine","Brenda","Joy", "Adama", "Mary")))
 }
 fun isEven(number:Int):Boolean{
+//return number%2==0
     if (number%2==0){
         return true
     }
@@ -29,15 +30,18 @@ fun isEven(number:Int):Boolean{
 data class Products(var name:String, var Weight:Float, var price:Int, var category:String ){
 
     fun products(names:String){
-        var grocerries=mutableListOf<String>()
-        var hygiene=mutableListOf<String>()
-        var other=mutableListOf<String>()
+    //fun product(product:Products({
+        var grocerries=mutableListOf<Product>()//<String>()
+        var hygiene=mutableListOf<Product>()//<String>()
+        var other=mutableListOf<Product>()//<String>()
         when (category){
-            "groceries"-> grocerries.add(names)
-            "hygiene"-> hygiene.add(names)
-            "other"->other.add(names)
+            "groceries"-> grocerries.add(product)//(names)
+            "hygiene"-> hygiene.add(product)//(names)
+            "other"->other.add(product)//(names)
         }
         println("${names} :${category}")
+        println(groceries)
+        println(other)
     }
 }
 
