@@ -16,7 +16,7 @@ var human= mutableListOf(
 )
 var descendingAge= human.sortedByDescending{persons->persons.age}
 println(descendingAge)
-//sortAge()
+
 
 addPeople()
 
