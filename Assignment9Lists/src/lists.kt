@@ -34,7 +34,16 @@ println(averageMileage)
 //at even indices i.e index 2,4,6 etc
 
 fun evenNames(names:List<String>):List<String>{
-    return names.filterIndexed { index, name ->index%2==0  }
+    var evenIndex=mutableListOf<String>()
+    names.forEachIndexed{
+            index, name->
+        if(index%2==0){
+            evenIndex.add(name)
+        }
+    }
+    return evenIndex
+
+//    return names.filterIndexed { index, name ->index%2==0  }
 }
 
 //Given a list of people’s heights in metres. Write a function that returns
